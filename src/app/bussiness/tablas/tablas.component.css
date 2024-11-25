@@ -1,0 +1,229 @@
+body, h1, h2, h3, h4, h5, h6, p, span, div, input, textarea, button, th, td {
+  font-family: 'Century Gothic', sans-serif !important;
+}
+
+h3 {
+  text-transform: none; /* Asegura que el texto se muestre tal como se escribe */
+}
+
+
+/* Card principal */
+.custom-card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    box-shadow: 0 4px 15px rgba(166, 17, 17, 0.8);
+  }
+  
+  .custom-card-header {
+    font-family: "Century Gothic", sans-serif; /* Fuente */
+    background-color: #8f7c00;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .custom-card-header h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  
+  .custom-card-body {
+    padding: 20px;
+  }
+  
+  .custom-card-footer {
+    text-align: center; /* Asegura el centrado del contenido */
+    padding: 10px; /* Reduce el padding general */
+    font-size: 14px; /* Tamaño de texto pequeño */
+  }
+  
+  /* Tabla */
+  .custom-table {
+    font-family: "Century Gothic", sans-serif; /* Fuente */
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .custom-table thead {
+    background-color: #2711cb;
+    color: white;
+  }
+  
+  .custom-table th {
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .custom-table td {
+    padding: 15px;
+    vertical-align: middle;
+  }
+  
+  .custom-table tr:hover {
+    background-color: rgba(100, 100, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Botones */
+  .custom-btn {
+    background-color: #b26d0d;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-btn:hover {
+    background-color: #000000;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modal */
+  .custom-modal {
+    border-radius: 15px;
+  }
+  
+  .custom-modal-header {
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    border-bottom: none;
+  }
+  
+  .custom-modal-body {
+    padding: 20px;
+  }
+  
+  .custom-modal-footer {
+    padding: 15px;
+    border-top: none;
+    text-align: center;
+  }
+  
+  .custom-modal-footer button {
+    background-color: #000000;
+    border: none;
+    color: rgb(143, 11, 11);
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+  /* Tarjeta principal */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Tabla */
+  .table {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Imágenes */
+  img.rounded {
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s ease;
+  }
+  
+  img.rounded:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Botones */
+  .btn-outline-info {
+    color: #05434c;
+    border-color: #4ca1af;
+  }
+  
+  .btn-outline-info:hover {
+    background-color: #4ca1af;
+    color: white;
+  }
+  
+  .btn-light {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-light:hover {
+    box-shadow: 0px 4px 10px rgb(0, 75, 156);
+  }
+  
+  /* Modal */
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .modal-content {
+    border-radius: 12px;
+  }
+  .search-container {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .pagination-btn {
+    font-size: 15px; /* Reduce el tamaño del texto en los botones */
+    padding: 15px 10px; /* Botones más pequeños */
+    border-radius: 15px; /* Esquinas redondeadas */
+    transition: all 0.3s ease; /* Suaviza las interacciones */
+  }
+  
+  .pagination-btn:hover {
+    background-color: #6a11cb; /* Cambia color en hover */
+    color: white;
+    transform: scale(1.05); /* Ligero zoom al pasar el ratón */
+  }
+  
+  span.fw-bold.text-muted {
+    font-size: 15px; /* Tamaño más pequeño para el número de página */
+  } 
+ 
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end; /* Centra la imagen horizontalmente */
+    margin: 10px 0;
+  }
+  
+  .profile-avatar {
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    height: 80px; /* Asegúrate de mantener un tamaño cuadrado */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Ajusta la imagen para que no se deforme */
+    border: 2px solid #ccc; /* Borde opcional */
+  }
+  
+  .profile-name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Color del texto */
+  }
+  
+
+

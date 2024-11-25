@@ -6,6 +6,9 @@ import { signal } from '@angular/core';
 import {MatListModule} from '@angular/material/list'
 import { CommonModule } from '@angular/common';  // Importa CommonModule
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { currentUser } from '../../../bussiness/login/login.component';
+import { Router } from '@angular/router'; // Importar Router para redirigir
+
 
 export type MenuItem={
   icon:string;
@@ -21,6 +24,8 @@ export type MenuItem={
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
+  currentUser = currentUser; // Vincular la señal global del usuario
+  constructor(private router: Router) {} // Inyectar Router
   sideNavCollapsed=signal(false);
   @Input() set collapsed(value: boolean) {
     this.sideNavCollapsed.set(value);
@@ -32,4 +37,10 @@ export class MenuComponent {
   ]);
 
   profilePicsSize=computed(()=>this.sideNavCollapsed()? '32px' : '100px');
+  logout() {
+    currentUser.set(null); // Limpiar datos del usuario
+    console.log('Sesión cerrada');
+    alert('Has cerrado sesión.');
+    this.router.navigate(['/login']); // Redirigir al login
+  }
 }
